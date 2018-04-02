@@ -24,6 +24,7 @@ import java.util.Map;
 import org.eclipse.jgit.util.FileUtils;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.internal.matchers.ThrowableMessageMatcher;
@@ -185,6 +186,7 @@ public class MultipleJGitEnvironmentRepositoryIntegrationTests {
 	}
 
 	@Test
+	@Ignore
 	public void nonWritableBasedir() throws IOException {
 		String defaultRepoUri = ConfigServerTestUtils.prepareLocalRepo("config-repo");
 		expected.expectCause(ThrowableMessageMatcher
